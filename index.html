@@ -112,6 +112,7 @@
     width: 180px; height: 180px; border-radius: 50%; padding: 3px;
     background: linear-gradient(135deg, var(--accent), #3b5bdb, #7950f2);
     animation: rotateBorder 6s linear infinite;
+    overflow: hidden;
   }
   @keyframes rotateBorder {
     0%   { background: linear-gradient(0deg,   var(--accent), #3b5bdb, #7950f2); }
@@ -122,7 +123,9 @@
 
   .avatar-ring img, .avatar-fallback {
     width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
-    object-position: center 20%;
+    object-position: center top;
+    transform: scale(1.2);
+    transform-origin: center 10%;
     display: block; background: var(--card2);
   }
   .avatar-fallback {
@@ -370,7 +373,7 @@
   <div class="hero-inner">
     <div class="hero-avatar">
       <div class="avatar-ring">
-        <img src="profile.jpg" alt="Muhammad Zaheer" />
+        <img src="profile.jpg?v=4" alt="Muhammad Zaheer" />
       </div>
       <div class="hero-badge">&#x25CF; Available for work</div>
     </div>
