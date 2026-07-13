@@ -264,6 +264,12 @@
   .skill-card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
 
   /* ── APPS ── */
+  .apps-subtitle {
+    font-size: 18px; font-weight: 700; color: var(--text);
+    margin: 8px 0 18px; letter-spacing: -0.2px;
+  }
+  .apps-group { margin-bottom: 40px; }
+  .apps-group:last-child { margin-bottom: 0; }
   .apps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
   div.app-card, .app-card {
     background: var(--card); border: 1px solid var(--border2);
@@ -493,39 +499,72 @@
 <!-- APPS -->
 <section id="apps">
   <div class="section-label reveal">Portfolio</div>
-  <div class="section-title reveal reveal-delay-1">Selected Applications</div>
-  <div class="apps-grid">
-    <div class="app-card reveal reveal-delay-1">
-      <div class="app-icon">&#x1F4B3;</div>
-      <div class="app-info"><div class="app-name">UPaisa</div><div class="app-meta">Fintech &bull; Client Project</div></div>
+  <div class="section-title reveal reveal-delay-1">My App Store Applications</div>
+
+  <div class="apps-group">
+    <h3 class="apps-subtitle reveal">Client Apps</h3>
+    <div class="apps-grid">
+      <a class="app-card reveal reveal-delay-1" href="https://apps.apple.com/pk/app/upaisa/id1536734651" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F4B3;</div>
+        <div class="app-info"><div class="app-name">UPaisa</div><div class="app-meta">FinTech &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-2" href="https://apps.apple.com/pk/app/uptcl-app-up-your-life/id1189813122" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F4F1;</div>
+        <div class="app-info"><div class="app-name">UPTCL</div><div class="app-meta">Telecom Super App &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-3" href="https://apps.apple.com/ae/app/elgrocer-uae-grocery-delivery/id1040399641" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F6D2;</div>
+        <div class="app-info"><div class="app-name">elGrocer</div><div class="app-meta">Online Grocery &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-1" href="https://apps.apple.com/pk/app/shoq-live-tv-movies-more/id6443879844" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F3A5;</div>
+        <div class="app-info"><div class="app-name">SHOQ</div><div class="app-meta">Entertainment &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-2" href="https://apps.apple.com/us/app/indrive-save-on-city-rides/id780125801" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F697;</div>
+        <div class="app-info"><div class="app-name">inDrive</div><div class="app-meta">Ride Hailing &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-3" href="https://apps.apple.com/pk/app/onic/id6448906061" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F4F6;</div>
+        <div class="app-info"><div class="app-name">Onic</div><div class="app-meta">Telecom &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
     </div>
-    <div class="app-card reveal reveal-delay-2">
-      <div class="app-icon">&#x1F4F1;</div>
-      <div class="app-info"><div class="app-name">UPTCL</div><div class="app-meta">Telecom &bull; Client Project</div></div>
-    </div>
-    <div class="app-card reveal reveal-delay-3">
-      <div class="app-icon">&#x1F69A;</div>
-      <div class="app-info"><div class="app-name">Fleet Management</div><div class="app-meta">Enterprise &bull; Etisalat Group</div></div>
-    </div>
-    <div class="app-card reveal reveal-delay-1">
-      <div class="app-icon">&#x1F465;</div>
-      <div class="app-info"><div class="app-name">HRM App</div><div class="app-meta">HR &bull; Etisalat Group</div></div>
-    </div>
-    <div class="app-card reveal reveal-delay-2">
-      <div class="app-icon">&#x1F4E6;</div>
-      <div class="app-info"><div class="app-name">Telco Domain Apps</div><div class="app-meta">Telecom &bull; CodeSaaz</div></div>
-    </div>
-    <div class="app-card reveal reveal-delay-3">
-      <div class="app-icon">&#x1F6D2;</div>
-      <div class="app-info"><div class="app-name">E-commerce &amp; Fintech Apps</div><div class="app-meta">Product &bull; Ovex Technologies</div></div>
-    </div>
-    <div class="app-card reveal reveal-delay-1">
-      <div class="app-icon">&#x1F30D;</div>
-      <div class="app-info"><div class="app-name">Gulf Client Applications</div><div class="app-meta">Enterprise &bull; Axact Technologies</div></div>
-    </div>
-    <div class="app-card reveal reveal-delay-2">
-      <div class="app-icon">&#x1F680;</div>
-      <div class="app-info"><div class="app-name">Consumer App (10M+ users)</div><div class="app-meta">Scale &bull; Ninesol Technologies</div></div>
+  </div>
+
+  <div class="apps-group">
+    <h3 class="apps-subtitle reveal">Utility Apps</h3>
+    <div class="apps-grid">
+      <a class="app-card reveal reveal-delay-1" href="https://apps.apple.com/pk/app/phone-transfer-data-share/id6760575976" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F4F2;</div>
+        <div class="app-info"><div class="app-name">Phone Transfer &amp; Data Share</div><div class="app-meta">Utility &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-2" href="https://apps.apple.com/pk/app/ai-translator-object-scanner/id6736613749" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F916;</div>
+        <div class="app-info"><div class="app-name">AI Translator &amp; Object Scanner</div><div class="app-meta">Productivity &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-3" href="https://apps.apple.com/pk/app/translator-image-voice/id6760531996" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F310;</div>
+        <div class="app-info"><div class="app-name">Translator – Image &amp; Voice</div><div class="app-meta">Productivity &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-1" href="https://apps.apple.com/us/app/universal-control-tv-remote/id6739201253" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F4FA;</div>
+        <div class="app-info"><div class="app-name">Universal Control TV Remote</div><div class="app-meta">Utility &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
+      <a class="app-card reveal reveal-delay-2" href="https://apps.apple.com/us/app/phone-anti-theft-alarm/id6478665375" target="_blank" rel="noopener">
+        <div class="app-icon">&#x1F6A8;</div>
+        <div class="app-info"><div class="app-name">Phone Anti Theft Alarm</div><div class="app-meta">Security &bull; App Store</div></div>
+        <div class="app-arrow">&#x2197;</div>
+      </a>
     </div>
   </div>
 </section>
