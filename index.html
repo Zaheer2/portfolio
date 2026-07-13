@@ -112,7 +112,6 @@
     width: 180px; height: 180px; border-radius: 50%; padding: 3px;
     background: linear-gradient(135deg, var(--accent), #3b5bdb, #7950f2);
     animation: rotateBorder 6s linear infinite;
-    overflow: hidden;
   }
   @keyframes rotateBorder {
     0%   { background: linear-gradient(0deg,   var(--accent), #3b5bdb, #7950f2); }
@@ -123,9 +122,6 @@
 
   .avatar-ring img, .avatar-fallback {
     width: 100%; height: 100%; border-radius: 50%; object-fit: cover;
-    object-position: center top;
-    transform: scale(1.2);
-    transform-origin: center 10%;
     display: block; background: var(--card2);
   }
   .avatar-fallback {
@@ -167,15 +163,11 @@
   }
   .hero-role .pill {
     background: var(--card2); border: 1px solid var(--border);
-    border-radius: 20px; padding: 4px 14px;
-    font-size: 13px; color: var(--accent2); font-weight: 500;
+    border-radius: 20px; padding: 4px 12px;
+    font-size: 12px; color: var(--accent2); font-weight: 500;
     opacity: 0; transform: translateY(10px);
-    animation: pillPop 0.4s ease forwards;
+    animation: pillPop 0.35s ease 1.9s forwards;
   }
-  .hero-role .pill:nth-child(1) { animation-delay: 1.9s; }
-  .hero-role .pill:nth-child(2) { animation-delay: 2.05s; }
-  .hero-role .pill:nth-child(3) { animation-delay: 2.2s; }
-  .hero-role .pill:nth-child(4) { animation-delay: 2.35s; }
   @keyframes pillPop { to { opacity:1; transform:translateY(0); } }
 
   .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
@@ -373,17 +365,45 @@
   <div class="hero-inner">
     <div class="hero-avatar">
       <div class="avatar-ring">
-        <img src="profile.jpg?v=6" alt="Muhammad Zaheer" />
+        <img src="profile.jpg" alt="Muhammad Zaheer" />
       </div>
       <div class="hero-badge">&#x25CF; Available for work</div>
     </div>
     <div class="hero-text">
       <h1><span id="typed-name"></span><span class="cursor">|</span></h1>
       <div class="hero-role">
-        <span class="pill">iOS Developer</span>
-        <span class="pill">Swift &amp; UIKit</span>
+        <span class="pill">iOS Development</span>
+        <span class="pill">iOS SDK</span>
+        <span class="pill">Swift</span>
+        <span class="pill">Xcode</span>
+        <span class="pill">Objective-C</span>
+        <span class="pill">UIKit</span>
         <span class="pill">SwiftUI</span>
+        <span class="pill">RxSwift</span>
+        <span class="pill">Combine</span>
+        <span class="pill">Animation Techniques</span>
+        <span class="pill">UI/UX</span>
+        <span class="pill">Auto Layout</span>
+        <span class="pill">Human Interface Guide</span>
+        <span class="pill">SOAP / Restful API integration</span>
+        <span class="pill">MVC</span>
         <span class="pill">MVVM</span>
+        <span class="pill">VIPER</span>
+        <span class="pill">SOLID Principles</span>
+        <span class="pill">Git</span>
+        <span class="pill">Agile</span>
+        <span class="pill">CI/CD</span>
+        <span class="pill">Firebase</span>
+        <span class="pill">Dependency Injection</span>
+        <span class="pill">Databases</span>
+        <span class="pill">JIRA</span>
+        <span class="pill">Modularized development</span>
+        <span class="pill">Notifications</span>
+        <span class="pill">App Security</span>
+        <span class="pill">Performance</span>
+        <span class="pill">Dependency Manager</span>
+        <span class="pill">AI-powered features</span>
+        <span class="pill">App Publishing</span>
       </div>
       <div class="hero-cta">
         <a href="#apps" class="btn btn-primary">View My Apps &rarr;</a>
@@ -402,8 +422,8 @@
       <div class="stat-label">Years Experience</div>
     </div>
     <div class="stat-card reveal reveal-scale reveal-delay-2">
-      <span class="stat-num" data-target="6">0</span>
-      <div class="stat-label">Apps on App Store</div>
+      <span class="stat-num" data-target="15" data-suffix="+">0</span>
+      <div class="stat-label">Apps Delivered</div>
     </div>
     <div class="stat-card reveal reveal-scale reveal-delay-3">
       <span class="stat-num" data-target="12" data-suffix="+">0</span>
@@ -426,7 +446,7 @@
       <p>From <strong>Firebase integration</strong> and <strong>REST/SOAP APIs</strong> to <strong>CI/CD pipelines</strong> and App Store publishing, I bring full-cycle expertise from idea to production.</p>
     </div>
     <div class="about-text reveal reveal-right reveal-delay-2">
-      <p>I've led teams and shipped applications across <strong>fintech, telecom, e-commerce, streaming, and real estate</strong> — including App Store apps like UPaisa, UPTCL, elGrocer, and SHOQ.</p>
+      <p>I've led teams and shipped applications across <strong>fintech, telecom, fleet, HR, and productivity</strong> domains — including work for Etisalat Group and other enterprise clients.</p>
       <p>My approach centers on <strong>MVVM, VIPER, and SOLID</strong> principles, ensuring every codebase is maintainable, testable, and built to scale.</p>
     </div>
   </div>
@@ -473,38 +493,40 @@
 <!-- APPS -->
 <section id="apps">
   <div class="section-label reveal">Portfolio</div>
-  <div class="section-title reveal reveal-delay-1">My App Store Applications</div>
+  <div class="section-title reveal reveal-delay-1">Selected Applications</div>
   <div class="apps-grid">
-    <a class="app-card reveal reveal-delay-1" href="https://apps.apple.com/pk/app/upaisa/id1536734651" target="_blank" rel="noopener">
+    <div class="app-card reveal reveal-delay-1">
       <div class="app-icon">&#x1F4B3;</div>
-      <div class="app-info"><div class="app-name">UPaisa</div><div class="app-meta">Fintech &bull; App Store</div></div>
-      <div class="app-arrow">&#x2197;</div>
-    </a>
-    <a class="app-card reveal reveal-delay-2" href="https://apps.apple.com/pk/app/uptcl-app-up-your-life/id1189813122" target="_blank" rel="noopener">
+      <div class="app-info"><div class="app-name">UPaisa</div><div class="app-meta">Fintech &bull; Client Project</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-2">
       <div class="app-icon">&#x1F4F1;</div>
-      <div class="app-info"><div class="app-name">UPTCL – App Up Your Life!</div><div class="app-meta">Telecommunications &bull; App Store</div></div>
-      <div class="app-arrow">&#x2197;</div>
-    </a>
-    <a class="app-card reveal reveal-delay-3" href="https://apps.apple.com/pk/app/elgrocer-uae-grocery-delivery/id1040399641" target="_blank" rel="noopener">
+      <div class="app-info"><div class="app-name">UPTCL</div><div class="app-meta">Telecom &bull; Client Project</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-3">
+      <div class="app-icon">&#x1F69A;</div>
+      <div class="app-info"><div class="app-name">Fleet Management</div><div class="app-meta">Enterprise &bull; Etisalat Group</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-1">
+      <div class="app-icon">&#x1F465;</div>
+      <div class="app-info"><div class="app-name">HRM App</div><div class="app-meta">HR &bull; Etisalat Group</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-2">
+      <div class="app-icon">&#x1F4E6;</div>
+      <div class="app-info"><div class="app-name">Telco Domain Apps</div><div class="app-meta">Telecom &bull; CodeSaaz</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-3">
       <div class="app-icon">&#x1F6D2;</div>
-      <div class="app-info"><div class="app-name">elGrocer: UAE Grocery Delivery</div><div class="app-meta">E-Commerce &bull; App Store</div></div>
-      <div class="app-arrow">&#x2197;</div>
-    </a>
-    <a class="app-card reveal reveal-delay-1" href="https://apps.apple.com/pk/app/shoq-live-tv-movies-more/id6443879844" target="_blank" rel="noopener">
-      <div class="app-icon">&#x1F3AC;</div>
-      <div class="app-info"><div class="app-name">SHOQ – Live TV, Movies &amp; more</div><div class="app-meta">Entertainment / OTT &bull; App Store</div></div>
-      <div class="app-arrow">&#x2197;</div>
-    </a>
-    <a class="app-card reveal reveal-delay-2" href="https://apps.apple.com/pk/app/qibla-connect-salah-times/id573155693" target="_blank" rel="noopener">
-      <div class="app-icon">&#x1F9ED;</div>
-      <div class="app-info"><div class="app-name">Qibla Connect® – Salah Times</div><div class="app-meta">Lifestyle / Islamic &bull; App Store</div></div>
-      <div class="app-arrow">&#x2197;</div>
-    </a>
-    <a class="app-card reveal reveal-delay-3" href="https://apps.apple.com/pk/app/betterhomes-connect/id6453477955" target="_blank" rel="noopener">
-      <div class="app-icon">&#x1F3E0;</div>
-      <div class="app-info"><div class="app-name">Betterhomes.Connect</div><div class="app-meta">Real Estate &bull; App Store</div></div>
-      <div class="app-arrow">&#x2197;</div>
-    </a>
+      <div class="app-info"><div class="app-name">E-commerce &amp; Fintech Apps</div><div class="app-meta">Product &bull; Ovex Technologies</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-1">
+      <div class="app-icon">&#x1F30D;</div>
+      <div class="app-info"><div class="app-name">Gulf Client Applications</div><div class="app-meta">Enterprise &bull; Axact Technologies</div></div>
+    </div>
+    <div class="app-card reveal reveal-delay-2">
+      <div class="app-icon">&#x1F680;</div>
+      <div class="app-info"><div class="app-name">Consumer App (10M+ users)</div><div class="app-meta">Scale &bull; Ninesol Technologies</div></div>
+    </div>
   </div>
 </section>
 
