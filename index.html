@@ -236,6 +236,29 @@
   .about-text p { font-size: 16px; color: var(--muted); line-height: 1.8; margin-bottom: 16px; }
   .about-text p strong { color: var(--text); font-weight: 500; }
 
+  /* ── ACHIEVEMENTS ── */
+  .achievements-list { display: flex; flex-direction: column; gap: 16px; max-width: 920px; }
+  .achievement-card {
+    background: var(--card); border: 1px solid var(--border2);
+    border-radius: 14px; padding: 22px 24px;
+    display: flex; gap: 18px; align-items: flex-start;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  .achievement-card:hover {
+    border-color: var(--border); transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(79,156,249,0.11);
+  }
+  .achievement-num {
+    flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px;
+    background: rgba(79,156,249,0.12); border: 1px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; color: var(--accent);
+  }
+  .achievement-card p {
+    font-size: 15px; color: var(--muted); line-height: 1.7; margin: 0;
+  }
+  .achievement-card p strong { color: var(--text); font-weight: 600; }
+
   /* ── SKILLS ── */
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
   .skill-card {
@@ -359,6 +382,7 @@
   <div class="nav-logo">Port<span>folio</span></div>
   <div class="nav-links">
     <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
     <a href="#skills">Skills</a>
     <a href="#apps">Apps</a>
     <a href="#contact">Contact</a>
@@ -381,34 +405,39 @@
         <span class="pill">iOS Development</span>
         <span class="pill">iOS SDK</span>
         <span class="pill">Swift</span>
-        <span class="pill">Xcode</span>
         <span class="pill">Objective-C</span>
+        <span class="pill">Xcode</span>
         <span class="pill">UIKit</span>
         <span class="pill">SwiftUI</span>
+        <span class="pill">WidgetKit</span>
         <span class="pill">RxSwift</span>
         <span class="pill">Combine</span>
         <span class="pill">Animation Techniques</span>
         <span class="pill">UI/UX</span>
         <span class="pill">Auto Layout</span>
         <span class="pill">Human Interface Guide</span>
-        <span class="pill">SOAP / Restful API integration</span>
+        <span class="pill">Liquid Glass design system</span>
         <span class="pill">MVC</span>
         <span class="pill">MVVM</span>
         <span class="pill">VIPER</span>
+        <span class="pill">TCA (The Composable Architecture)</span>
+        <span class="pill">Clean Architecture</span>
         <span class="pill">SOLID Principles</span>
-        <span class="pill">Git</span>
-        <span class="pill">Agile</span>
-        <span class="pill">CI/CD</span>
-        <span class="pill">Firebase</span>
         <span class="pill">Dependency Injection</span>
-        <span class="pill">Databases</span>
-        <span class="pill">JIRA</span>
         <span class="pill">Modularized development</span>
+        <span class="pill">SOAP / Restful API integration</span>
+        <span class="pill">Firebase</span>
+        <span class="pill">Databases</span>
         <span class="pill">Notifications</span>
+        <span class="pill">Core ML</span>
+        <span class="pill">AI-powered features</span>
         <span class="pill">App Security</span>
         <span class="pill">Performance</span>
+        <span class="pill">Git</span>
         <span class="pill">Dependency Manager</span>
-        <span class="pill">AI-powered features</span>
+        <span class="pill">CI/CD</span>
+        <span class="pill">Agile</span>
+        <span class="pill">JIRA</span>
         <span class="pill">App Publishing</span>
       </div>
       <div class="hero-cta">
@@ -458,6 +487,26 @@
   </div>
 </section>
 
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <div class="section-label reveal">Career Impact</div>
+  <div class="section-title reveal reveal-delay-1">Key Achievements</div>
+  <div class="achievements-list">
+    <div class="achievement-card reveal reveal-delay-1">
+      <div class="achievement-num">01</div>
+      <p>Migrated legacy <strong>Objective-C</strong> codebase to <strong>Swift</strong> with a comprehensive test suite, achieving <strong>99.9% crash-free sessions</strong>, <strong>35% faster app launches</strong>, and <strong>70% overall performance improvement</strong> across production apps.</p>
+    </div>
+    <div class="achievement-card reveal reveal-delay-2">
+      <div class="achievement-num">02</div>
+      <p>Shipped <strong>8+ production apps</strong> from concept to App Store — collectively reaching <strong>2M+ downloads</strong> across startup and enterprise environments.</p>
+    </div>
+    <div class="achievement-card reveal reveal-delay-3">
+      <div class="achievement-num">03</div>
+      <p>Led and mentored a <strong>4-person iOS team</strong>, establishing engineering standards that delivered scalable, high-quality apps across diverse industries.</p>
+    </div>
+  </div>
+</section>
+
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-label reveal">Technical Skills</div>
@@ -466,7 +515,7 @@
     <div class="skill-card reveal reveal-delay-1">
       <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
       <h4>iOS Development</h4>
-      <p>Swift, Objective-C, UIKit, SwiftUI — building native, high-performance iOS applications from the ground up.</p>
+      <p>Swift, Objective-C, UIKit, SwiftUI, WidgetKit, Liquid Glass — building native, high-performance iOS applications from the ground up.</p>
     </div>
     <div class="skill-card reveal reveal-delay-2">
       <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
@@ -476,7 +525,7 @@
     <div class="skill-card reveal reveal-delay-3">
       <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></div>
       <h4>Architecture &amp; Patterns</h4>
-      <p>MVVM, VIPER, MVC, SOLID, Dependency Injection — writing code that stands the test of time.</p>
+      <p>MVVM, VIPER, MVC, TCA, Clean Architecture, SOLID, Dependency Injection — writing code that stands the test of time.</p>
     </div>
     <div class="skill-card reveal reveal-delay-1">
       <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
@@ -491,7 +540,7 @@
     <div class="skill-card reveal reveal-delay-3">
       <div class="skill-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
       <h4>Quality &amp; Security</h4>
-      <p>App security, performance optimization, notifications, and AI-powered feature integration.</p>
+      <p>App security, performance optimization, notifications, Core ML, and AI-powered feature integration.</p>
     </div>
   </div>
 </section>
