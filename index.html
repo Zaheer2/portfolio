@@ -259,6 +259,66 @@
   }
   .achievement-card p strong { color: var(--text); font-weight: 600; }
 
+  /* ── CERTIFICATIONS ── */
+  .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+    max-width: 920px;
+  }
+  .cert-card {
+    background: var(--card);
+    border: 1px solid var(--border2);
+    border-radius: 14px;
+    padding: 22px 24px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .cert-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(79,156,249,0.11);
+  }
+  .cert-meta {
+    font-size: 12px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
+  .cert-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.35;
+    margin: 0;
+  }
+  .cert-card p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin: 0;
+  }
+  .cert-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+  }
+  .cert-links a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent2);
+    text-decoration: none;
+  }
+  .cert-links a:hover { color: var(--accent); text-decoration: underline; }
+
   /* ── SKILLS ── */
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
   .skill-card {
@@ -383,6 +443,7 @@
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#achievements">Achievements</a>
+    <a href="#certifications">Certs</a>
     <a href="#skills">Skills</a>
     <a href="#apps">Apps</a>
     <a href="#contact">Contact</a>
@@ -503,6 +564,23 @@
     <div class="achievement-card reveal reveal-delay-3">
       <div class="achievement-num">03</div>
       <p>Led and mentored a <strong>4-person iOS team</strong>, establishing engineering standards that delivered scalable, high-quality apps across diverse industries.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-label reveal">Learning</div>
+  <div class="section-title reveal reveal-delay-1">Certifications</div>
+  <div class="certs-grid">
+    <div class="cert-card reveal reveal-delay-1">
+      <span class="cert-meta">Coursera &bull; EDUCBA &bull; Nov 2026</span>
+      <h4>Build Intelligent iOS Apps with Core ML 3: Learn &amp; Apply AI</h4>
+      <p>Completed authorized training on integrating Core ML 3 into iOS apps — model integration, on-device AI features, and practical application in Swift-based mobile products.</p>
+      <div class="cert-links">
+        <a href="https://www.coursera.org/verify/XF6F08Z3IJ05" target="_blank" rel="noopener">Verify credential ↗</a>
+        <a href="certificates/core-ml-coursera.pdf" target="_blank" rel="noopener">View certificate PDF</a>
+      </div>
     </div>
   </div>
 </section>
